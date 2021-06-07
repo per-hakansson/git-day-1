@@ -5,7 +5,8 @@ public class cryptoRepositary {
     private ArrayList<Currency> currencies = new ArrayList<>();
 
     public cryptoRepositary() {
-        currencies.add(new Currency("Bitcoin", 200000));
+        currencies.add(new Currency("Bitcoin", 30000));
+        currencies.add(new Currency("Ethereum", 2801));
 
     }
     public ArrayList<Currency> viewList() {

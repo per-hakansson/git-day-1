@@ -11,7 +11,7 @@ public class CurrencyApp {
         System.out.printf("%s  were found%s\n", currencies.size(), currencies.size() > 0 ? ":" : ".");
 
         for (Currency currency : currencies) {
-            System.out.printf("Name: %s\nValue: %.2f", currency.getName(), currency.getValue());
+            System.out.printf("Name: %s\nValue: %.2f\n\n   ", currency.getName(), currency.getValue());
         }
         System.out.println();
     }
