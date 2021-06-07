@@ -9,7 +9,7 @@ public class Main {
         System.out.println(addition(46, 343));
     }
 
-    private static int addition (int y, int x) {
+    private static int addition (int x, int y) {
         return y + x;
     }
 
