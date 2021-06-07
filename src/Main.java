@@ -5,7 +5,6 @@ public class Main {
 
         CurrencyApp app = new CurrencyApp();
 
-        app.viewList();
 
     }
 

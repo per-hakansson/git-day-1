@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class cryptoRepositary {
@@ -8,14 +9,14 @@ public class cryptoRepositary {
 
     }
 
-    public ArrayList<Currency> viewList() {
-        ArrayList<Currency> currenciesFound = new ArrayList<>();
+    public ArrayList<Currency> findName(String keyword) {
+        ArrayList<Currency> cryptoFound = new ArrayList<>();
         for (Currency currency : currencies) {
-            currenciesFound.add(currency);
+            if (currency.getName().toLowerCase().contains(keyword.toLowerCase())) {
+                cryptoFound.add(currency);
+            }
         }
-
-
-        return currenciesFound;
+        return cryptoFound;
     }
 
 

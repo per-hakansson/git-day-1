@@ -1,23 +1,24 @@
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class CurrencyApp {
+    private cryptoRepositary cryptoRepo = new cryptoRepositary();
 
-    public void viewList () {
-        System.out.println("This is a list of the current crypto currencies");
-        System.out.println();
-        ArrayList<Currency> currencies = new cryptoRepositary.viewList();
+    public CurrencyApp() {
+        searchByName("Bitcoin");
+    }
 
-        for(Currency currency : currencies){
+    public void searchByName(String keyword) {
+        System.out.printf("Searching for books with '%s' in the title...\n", keyword);
+
+        ArrayList<Currency> currencies = cryptoRepo.findName(keyword);
+
+        System.out.printf("%s  were found%s\n", currencies.size(), currencies.size() > 0 ? ":" : ".");
+
+        for (Currency currency : currencies) {
             System.out.printf("Name: %s\nValue: %f", currency.getName(), currency.getValue());
         }
-
-
-
-
-
-
-
+        System.out.println();
     }
 }
