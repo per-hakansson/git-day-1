@@ -8,5 +8,15 @@ public class cryptoRepositary {
 
     }
 
+    public ArrayList<Currency> viewList() {
+        ArrayList<Currency> currenciesFound = new ArrayList<>();
+        for (Currency currency : currencies) {
+            currenciesFound.add(currency);
+        }
+
+
+        return currenciesFound;
+    }
+
 
 }
