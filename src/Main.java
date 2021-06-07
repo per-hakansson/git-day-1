@@ -5,7 +5,8 @@ public class Main {
 
         CurrencyApp app = new CurrencyApp();
 
-        app.searchByName("Bitcoin");
+
+        app.viewList();
 
 
     }

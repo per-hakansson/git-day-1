@@ -8,6 +8,13 @@ public class cryptoRepositary {
         currencies.add(new Currency("Bitcoin", 200000));
 
     }
+    public ArrayList<Currency> viewList() {
+        ArrayList<Currency> cryptoFound = new ArrayList<>();
+        for (Currency currency : currencies) {
+            cryptoFound.add(currency);
+        }
+        return cryptoFound;
+    }
 
     public ArrayList<Currency> findName(String keyword) {
         ArrayList<Currency> cryptoFound = new ArrayList<>();
